@@ -27,9 +27,9 @@
 
 
     {% for post in post_list %}
-    <div class="shadow p-3 mb-5 bg-white rounded">
+    <div style="overflow-wrap: break-word;" class="shadow p-3 mb-5 bg-white rounded">
         <h3><a href="{% url 'posts:details' post.pk %}">{{post.title}}</a></h3>
-        <p class="lead">{{post.body}}</p>
+        <p style="" class="lead">{{post.body}}</p>
         <p class="blockquote-footer">{{post.author}}</p>
         <p><em>{{post.updated}}</em></p>
     
